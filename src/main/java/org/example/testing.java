@@ -13,6 +13,11 @@ import java.io.IOException;
 
 public class testing {
 static WebDriver driver;
+
+        public static void main(String[] args) {
+        openBrowser("https://www.google.com");
+    }
+
     public static void openBrowser(String browserName) {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
